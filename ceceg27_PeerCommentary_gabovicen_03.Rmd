@@ -55,7 +55,6 @@ sd(d$age)
 
 #cece-looks good I did the same thing, but make sure you call ggplot before you run these. Also I would consider naming each ggplot a different letter so you don't accidentially mix them up 
 ```{r}
-library(ggplot2)
 g<- ggplot(d, aes(x = gender, y = height)) + geom_boxplot()
 g
 ```
@@ -86,7 +85,7 @@ g
 
 ## 4) Using histograms and Q-Q plots, check whether the quantitative variables seem to be drawn from a normal distribution. Which seem to be and which do not (hint: not all are drawn from the normal distribution)? For those that are not normal, can you determine from which common distribution they are drawn?
 
-#cece - looks good - I got the same results, I just ran gg plots first and only ran histograms on the ones I identified as non-normal. 
+#cece - looks good - I got the same results, I just ran qq plots first and only ran histograms on the ones I identified as non-normal. 
 ```{r}
 hist(d$height, probability = TRUE, main = "Height Distribution")
 hist(d$weight, probability = TRUE, main = "Weight Distribution")
