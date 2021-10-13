@@ -116,6 +116,7 @@ Those distributons that dont have a normal distibutuion are related with small d
 
 ## 5) Now use the sample() function to sample ONE subset of 30 zombie survivors (without replacement) from this population and calculate the mean and sample standard deviation for each variable. Also estimate the standard error for each variable, and construct the 95% confidence interval for each mean. Note that for the variables that are not drawn from the normal distribution, you may need to base your estimate of the CIs on slightly different code than for the normal…
 
+#cece notes - I used a slightly different command, but it looks like we got the same results 
 ```{r}
 library(dplyr)
 s<- sample_n(d, 30, replace = FALSE, prob = NULL)
@@ -124,6 +125,7 @@ s
 
 # mean
 
+#these are all good, just for question 6 you will have to name each mean and sd something so you can reference it when you're making the confidence intervals 
 ```{r}
 mean(s$height)
 mean(s$weight)
